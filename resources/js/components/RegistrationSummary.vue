@@ -65,7 +65,7 @@
         </div>
 
         <div class="d-flex justify-content-between">
-            <button class="btn btn-secondary px-4" @click="$emit('prev')" :disabled="loading">Back</button>
+            <button class="btn btn-fame-outline px-4" @click="$emit('prev')" :disabled="loading">Back</button>
             <button class="btn btn-success px-4" @click="$emit('submit')" :disabled="loading">
                 <span v-if="loading" class="spinner-border spinner-border-sm me-2"></span>
                 <span v-if="loading">Submitting...</span>

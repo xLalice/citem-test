@@ -34,7 +34,6 @@
                     <option value="Singapore">Singapore</option>
                     <option value="China">China</option>
                     <option value="Australia">Australia</option>
-                    <!-- Add more as needed -->
                 </select>
             </div>
             <div class="col-md-6 mb-3">
@@ -57,8 +56,8 @@
         </div>
 
         <div class="d-flex justify-content-between">
-            <button class="btn btn-secondary px-4" @click="$emit('prev')">Back</button>
-            <button class="btn btn-primary px-4" @click="validateAndNext">Next Step</button>
+            <button class="btn btn-fame-outline px-4" @click="$emit('prev')">Back</button>
+            <button class="btn btn-fame px-4" @click="validateAndNext">Next Step</button>
         </div>
     </div>
 </template>
@@ -68,7 +67,6 @@ const props = defineProps(['formData']);
 const emit = defineEmits(['prev', 'next']);
 
 const handleFileUpload = (event) => {
-    // Update the reactive object with the File object directly
     props.formData.brochure = event.target.files[0];
 };
 

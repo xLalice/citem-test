@@ -44,7 +44,7 @@
         </div>
 
         <div class="d-flex justify-content-end">
-            <button class="btn btn-primary px-4" @click="validateAndNext">
+            <button class="btn btn-fame px-4" @click="validateAndNext">
                 Next Step <i class="bi bi-arrow-right"></i>
             </button>
         </div>

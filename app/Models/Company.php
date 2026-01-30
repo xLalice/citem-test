@@ -21,7 +21,6 @@ class Company extends Model
         'brochure_path',
     ];
 
-    // Express Equiv: Ref: 'User'
     public function user()
     {
         return $this->belongsTo(User::class);
