@@ -1,11 +1,68 @@
-@import 'tailwindcss';
+:root {
+    --fame-dark: #2c2520;   
+    --fame-gold: #c5a065;   
+    --fame-cream: #f9f7f2; 
+    --fame-accent: #d35400; 
+}
 
-@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
-@source '../../storage/framework/views/*.php';
-@source '../**/*.blade.php';
-@source '../**/*.js';
+body {
+    font-family: 'Lato', sans-serif;
+    color: var(--fame-dark);
+    background-color: var(--fame-cream) !important; 
+    background-image: url('https://www.transparenttextures.com/patterns/cubes.png');
+}
 
-@theme {
-    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-        'Segoe UI Symbol', 'Noto Color Emoji';
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+.btn-fame {
+    background-color: var(--fame-dark);
+    color: #fff;
+    border: 1px solid var(--fame-dark);
+    border-radius: 0; 
+    padding: 10px 25px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    transition: all 0.3s ease;
+}
+
+.btn-fame:hover {
+    background-color: var(--fame-gold);
+    border-color: var(--fame-gold);
+    color: #fff;
+}
+
+.btn-fame-outline {
+    background-color: transparent;
+    color: var(--fame-dark);
+    border: 1px solid var(--fame-dark);
+    border-radius: 0;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+}
+
+.btn-fame-outline:hover {
+    background-color: var(--fame-dark);
+    color: #fff;
+}
+
+.card-fame {
+    border: none;
+    border-radius: 0;
+    box-shadow: 0 10px 30px rgba(44, 37, 32, 0.08);
+    background-color: #fff;
+}
+
+.card-fame .card-header {
+    background-color: #fff;
+    border-bottom: 2px solid var(--fame-gold);
+    padding: 1.5rem;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: var(--fame-gold);
+    box-shadow: 0 0 0 0.25rem rgba(197, 160, 101, 0.25);
 }

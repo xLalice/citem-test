@@ -2,33 +2,55 @@
     <div class="container mt-5">
         <div class="row justify-content-center">
             <div class="col-md-8">
-                <div class="card shadow-sm">
-                    <div class="card-header bg-white">
-                        <h4 class="mb-0">Manila FAME Registration</h4>
-                        <small class="text-muted"
-                            >Step {{ currentStep }} of 3</small
+                <div class="card card-fame">
+                    <div class="card-header text-center">
+                        <h2 class="mb-1" style="color: var(--fame-dark)">
+                            MANILA
+                            <span style="color: var(--fame-gold)">FAME</span>
+                        </h2>
+                        <p class="text-muted mb-3">Buyer Registration Portal</p>
+
+                        <div
+                            class="d-flex justify-content-between mb-1 small text-uppercase fw-bold"
+                            style="color: var(--fame-dark)"
                         >
-                        <div class="progress mt-2" style="height: 5px">
+                            <span>Account</span>
+                            <span>Company</span>
+                            <span>Review</span>
+                        </div>
+                        <div
+                            class="progress"
+                            style="height: 4px; background-color: #eee"
+                        >
                             <div
-                                class="progress-bar bg-dark"
+                                class="progress-bar"
+                                role="progressbar"
                                 :style="{
                                     width: (currentStep / 3) * 100 + '%',
+                                    backgroundColor: 'var(--fame-gold)',
                                 }"
                             ></div>
                         </div>
                     </div>
-                    <div class="card-body">
+
+                    <div class="card-body p-4">
                         <div v-if="submitted" class="text-center py-5">
-                            <h3 class="text-success">
+                            <h3
+                                class="text-success mb-3"
+                                style="
+                                    font-family:
+                                        &quot;Playfair Display&quot;, serif;
+                                "
+                            >
                                 Registration Successful!
                             </h3>
-                            <p>
-                                Thank you for registering. We will review your
-                                application shortly.
+                            <p class="text-muted">
+                                Thank you for joining us. Please check your
+                                email for confirmation.
                             </p>
                             <button
                                 @click="resetForm"
-                                class="btn btn-outline-dark mt-3"
+                                class="btn btn-fame-outline mt-3"
                             >
                                 Register Another
                             </button>
@@ -58,6 +80,10 @@
                             />
                         </div>
                     </div>
+                </div>
+
+                <div class="text-center mt-4 text-muted small">
+                    &copy; 2026 CITEM. All Rights Reserved.
                 </div>
             </div>
         </div>
